@@ -50,6 +50,25 @@
 /* RESET 
 /*--------------------------------------*/
 
+.h1,
+ h2, 
+ h3 {
+     color: var(--white);
+     line-height: 40px;
+ }
+
+ .h1 {
+     font-size: var(--fs-1);
+ }
+
+ .h2 {
+     font-size: var(--fs-2);
+ }
+
+ .h3 {
+     font-size: var(--fs-6);
+ }
+
 * {
     margin: 0;
     padding: 0;
@@ -211,4 +230,38 @@ button {
 
 .overlay.active {
     pointer-events: all;
+}
+
+/*Banner*/
+
+.hero {
+    background: url('../imgs/MOVIES\ 5.png') no-repeat;
+    background-size: cover;
+    opacity: 25%;
+    filter: saturate(50%);
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: var(--section-padding);
+}
+
+.hero-content {
+    margin-top: 50px;
+}
+
+.hero-subtitle {
+    color:var(--citrine);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-700);
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    margin-bottom: 30px;
+}
+
+.hero-title > strong {
+    color: var(--citrine);
 }
